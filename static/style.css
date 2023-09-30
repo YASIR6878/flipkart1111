@@ -1,0 +1,263 @@
+    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400;1,500&family=Solitreo&display=swap');
+:root {
+    --main-bg-color:#2874f0;
+  }
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    
+
+}
+.belownav{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+  
+.container{
+    height: 100%;
+
+}
+.text{
+    overflow-x: hidden;
+    margin-left: -64px;
+    color: gray;
+    font-size: 12px;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+    
+}
+.cards{
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+ justify-content: center;
+ overflow: hidden;
+}
+.card h2{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.lines{
+    text-align: center;
+}
+
+footer{
+    background-color:#172337;
+    color: white;
+    
+}
+.footerContainer{
+    font-size: small;
+    display: flex;
+    width: 100%;
+}
+.footerContainer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.footerContainer ul li {
+    text-decoration: none;
+}
+.footerContainer > div {
+    margin-top: 10px;
+    margin-right: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+.ABOUT{
+    margin-left: 100px;
+}
+.vertical-line {
+    display: inline-block;
+    width: 1px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+   font-size:2em;
+   color: black;
+   opacity: 0.9; 
+}
+.socialIcons a:hover{
+    background-color: #112;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerbottom{
+    display: flex;
+    background-color: #172337;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    padding: 20px;
+    
+}
+.footerbottom p {
+    margin-top: -2px;
+    margin-left: -81px;
+}
+.footerbottom p{
+    color: white;
+}
+.icon{
+    margin-top: -44px;
+}
+
+.btn{
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    body{
+        background-color: red;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        justify-content: center;
+        margin: 12px 0;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    .search{
+        justify-content: center;
+    }
+    .search input{
+        margin: 12px 16px;
+    }
+    nav ul{
+        height: 34px;
+    }
+    .slider{
+        height: 23vh;
+    }
+}
+.navbar{
+    height: 60px;
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navlogo{
+    margin-left: 40px;
+    height: 50px;
+    width: 75px;
+}
+.logo{
+    height: 20px;
+    background-size: cover;
+    width: 75px;
+    
+}
+
+.Deliver{
+color:white;
+margin-left: 15px;
+font-size: 0.85rem;
+font-weight: bolder;
+
+}
+.navaddress{
+    margin-left: -140px;
+    padding-top: 12px;
+}
+
+.navsearch{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:white;
+    width: 400px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.searching{
+    width:100%;
+    font-size: 14px;
+    border: none;
+    padding-left: 15px;
+}
+.searchicon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color:var(--main-bg-color);
+}
+
+.navsignin{
+text-decoration-line: none;
+font-size:15px;
+font-weight: bold;
+height: 30.67px;
+width: 120px;
+background-color: white;
+color:#2874f0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.navseller,.navmore p{
+    font-style: 16px Roboto,Arial sans-serif;
+    font-size: 17px;
+    font-weight: 550;
+}
+.navcart i{
+font-size: 30px
+}
+.navcart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.btn{
+    height: 22px;
+    width: 55px;
+    background-color: #2874f0;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+.login{
+    text-decoration: none;
+    color:  var(--main-bg-color);;
+}

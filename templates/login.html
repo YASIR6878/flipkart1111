@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>login</title>
+        <style>
+        body{
+            overflow-x: hidden;
+        }
+        
+          .contact {
+            padding: 2%;
+            width: 900px;
+            height: 150px;
+          }
+        
+          .col-md-3 {
+            background:#2874f0;
+            padding: 2%;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+            width: 45px;
+          }
+        
+          .contact-info {
+            margin-top: 10%;
+            font-size: 15px;
+            color: white;
+          }
+        
+          .contact-info img {
+            margin-top: 50px;
+          }
+        
+          .contact-info h2 {
+            margin-bottom: 5%;
+          }
+        
+          .col-md-9 {
+            background: #fff;
+            padding: 2%;
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+          }
+        
+          .contact-form label {
+            font-weight: 600;
+          }
+        
+          .contact-form button {
+            background:#fb641b;
+            color: #fff;
+            margin-left: 48px;
+            font-weight: 600;
+            width: 80%; /* Adjust the width as desired */
+          }
+        
+          .contact-form button:hover {
+            background: #ff9b00;
+          }
+        
+          .contact-form button:focus {
+            box-shadow: none;
+          }
+        
+          nav {
+            height: 20px;
+          }
+          footer{
+    background-color:#172337;
+    color: white;
+    
+}
+.footerContainer{
+    font-size: small;
+    display: flex;
+    width: 100%;
+    margin-top: 300px;
+    height: 235px;
+}
+.footerContainer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.footerContainer ul li {
+    text-decoration: none;
+}
+.footerContainer > div {
+    margin-top: 10px;
+    margin-right: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+.ABOUT{
+    margin-left: 100px;
+}
+.vertical-line {
+    display: inline-block;
+    width: 1px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.footerbottom{
+    display: flex;
+    background-color: #172337;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    padding: 20px;
+    
+}
+h4{
+    font-size: 12px;
+}
+.footerbottom p {
+    margin-top: 49px;
+    margin-left: -48px;
+}
+.footerbottom p{
+    color: white;
+}
+.icon{
+    margin-top: -35px;
+}
+.Existing{
+    margin-left: 120px;
+}
+        </style>
+        
+    
+      </head>
+<body>
+    <div class="container2 mb-3 py-7">
+    
+        <form method="post" action="/loginuser">
+             {% csrf_token %}
+             <div class="container contact">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="contact-info">
+                    <h2>Login</h2>
+                    <h4>Get access to your Orders, Wishlist and Recommendations</h4>
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="image"/>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="contact-form">
+                    <div class="form-group">
+                      <div class="col-sm-10">          
+                      <input type="text" class="form-control" id="name" placeholder="Enter Username" name="name">
+                      <input type="password" class="form-control" id="pass" placeholder="Enter password" name="pass">
+                      </div>
+                    </div>
+                    <div class="form-group">        
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <p>By continuing, you agree to Flipkart's<a href="TermsofUse"> Terms of Use </a>and<a href=" PrivacyPolicy "> Privacy Policy</a></p>
+                      <button type="submit" class="btn btn-default">CONTINUE</button>
+                      <p class="Existing"><a href="/signup">New to Flipkart? Create an account</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer>
+                <div class="footerContainer">
+                    <div class="ABOUT">
+                        <h4>ABOUT</h4>
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>About Us</li>
+                            <li>Careers</li>
+                            <li>Flipkart Stories</li>
+                            <li>Press</li>
+                            <li>Flipkart</li>
+                            <li>Wholesale</li>
+                            <li>Corporate</li>
+                            <li>Information</li>
+                        </ul>
+                    </div>
+                    <div class="HELP">
+                        <h4>HELP</h4>
+                        <ul>
+                            <li>Payments</li>
+                            <li>Shipping</li>
+                            <li>FAQ</li>
+                            <li>Report</li>
+                            <li>Infringement</li>
+                        </ul>
+                    </div>
+                    <div class="CONSUMER POLICY">
+                        <h4>CONSUMER POLICY</h4>
+                        <ul>
+                            <li>Cancellation&returns</li>
+                            <li>Terms Of Use</li>
+                            <li>Security</li>
+                            <li>Privacy</li>
+                            <li>Sitemap</li>
+                            <li>Grievance</li>
+                            <li>Redressal</li>
+                            <li>EPR Compliance</li>
+                        </ul>
+                    </div>
+                    <div class="SOCIAL">
+                        <h4>SOCIAL</h4>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="mail">
+                        <h4>Mail Us:</h4>
+                        <ul>
+                            <li>Flipkart Internet Private Limited,</li>
+                            <li>Buildings Alyssa, Begonia &</li>
+                            <li>Clove Embassy Tech Village,</li>
+                            <li>Outer Ring Road, Devar,</li>
+                            <li>Bengaluru, 560103,</li>
+                            <li>Karnataka, India</li>
+                        </ul>
+                    </div>
+                    <div class="address">
+                        <h4>Registered Office Address:</h4>
+                        <ul>
+                           <li>Flipkart Internet Private Limited,</li>
+                           <li> Alyssa, Begonia &</li>
+                           <li>Clove Embassy Tech Village,</li>
+                           <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                           <li>Bengaluru, 560103,</li>
+                           <li>Karnataka, India</li>
+                           <li>CIN : U51109KA2012PTC066107</li>
+                           <li>Telephone: 044-45614700</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerbottom">
+                    <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K">
+                    <p>Become a Seller</p>
+                    <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0zLTNoMjB2MjBILTN6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAuNDkyIDNDNi4zNTMgMyAzIDYuMzYgMyAxMC41YzAgNC4xNCAzLjM1MyA3LjUgNy40OTIgNy41QzE0LjY0IDE4IDE4IDE0LjY0IDE4IDEwLjUgMTggNi4zNiAxNC42NCAzIDEwLjQ5MiAzem0zLjE4IDEyTDEwLjUgMTMuMDg4IDcuMzI3IDE1bC44NC0zLjYwN0w1LjM3IDguOTdsMy42OS0uMzE1TDEwLjUgNS4yNWwxLjQ0IDMuMzk4IDMuNjkuMzE1LTIuNzk4IDIuNDIyLjg0IDMuNjE1eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=">
+                    <p>Advertise</p>
+                    <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE4IDE3Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLTFoMjB2MjBILTF6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTYuNjY3IDVIMTQuODVjLjA5Mi0uMjU4LjE1LS41NDIuMTUtLjgzM2EyLjQ5NyAyLjQ5NyAwIDAgMC00LjU4My0xLjM3NUwxMCAzLjM1bC0uNDE3LS41NjdBMi41MSAyLjUxIDAgMCAwIDcuNSAxLjY2N2EyLjQ5NyAyLjQ5NyAwIDAgMC0yLjUgMi41YzAgLjI5MS4wNTguNTc1LjE1LjgzM0gzLjMzM2MtLjkyNSAwLTEuNjU4Ljc0Mi0xLjY1OCAxLjY2N2wtLjAwOCA5LjE2NkExLjY2IDEuNjYgMCAwIDAgMy4zMzMgMTcuNWgxMy4zMzRhMS42NiAxLjY2IDAgMCAwIDEuNjY2LTEuNjY3VjYuNjY3QTEuNjYgMS42NiAwIDAgMCAxNi42NjcgNXptMCA2LjY2N0gzLjMzM3YtNWg0LjIzNEw1LjgzMyA5LjAyNWwxLjM1Ljk3NSAxLjk4NC0yLjdMMTAgNi4xNjdsLjgzMyAxLjEzMyAxLjk4NCAyLjcgMS4zNS0uOTc1LTEuNzM0LTIuMzU4aDQuMjM0djV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz4KICAgIDwvZz4KPC9zdmc+Cg==">
+                    <p>Gift Cards</p>
+                    <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTNoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOS41IDNDNS4zNiAzIDIgNi4zNiAyIDEwLjUgMiAxNC42NCA1LjM2IDE4IDkuNSAxOGM0LjE0IDAgNy41LTMuMzYgNy41LTcuNUMxNyA2LjM2IDEzLjY0IDMgOS41IDN6bS43NSAxMi43NWgtMS41di0xLjVoMS41djEuNXptMS41NTMtNS44MTNsLS42NzYuNjljLS41NC41NDgtLjg3Ny45OTgtLjg3NyAyLjEyM2gtMS41di0uMzc1YzAtLjgyNS4zMzgtMS41NzUuODc3LTIuMTIzbC45My0uOTQ1Yy4yNzgtLjI3LjQ0My0uNjQ1LjQ0My0xLjA1NyAwLS44MjUtLjY3NS0xLjUtMS41LTEuNVM4IDcuNDI1IDggOC4yNUg2LjVhMyAzIDAgMSAxIDYgMGMwIC42Ni0uMjcgMS4yNi0uNjk3IDEuNjg4eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=">
+                    <p>Help Center</p>
+                    <p><pre>   &copy; 2007-2023<span class="designer"> Flipkart.com</span><pre></p>
+        
+                </div>
+            </footer>  
+</body>
+</html>
