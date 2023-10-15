@@ -89,7 +89,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': '10ltORxgpzYDZbXRNvpb',
         'HOST': 'containers-us-west-144.railway.app',  # Or the hostname of your MySQL server
-        'PORT': '6455',           # Leave empty to use the default MySQL port (3306)
+        'PORT': '4444',           # Leave empty to use the default MySQL port (3306)
     }
 }
 
