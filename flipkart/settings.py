@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-70zl(kb4299ra3d!2$ef4437vogu81&fs4q7h-)&af0-s899k)
 DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app','.now.sh','localhost']
-
+'''
+ALLOWED_HOSTS = []
+'''
 
 # Application definition
 
@@ -82,17 +84,28 @@ DATABASES = {
     }
 }
 '''
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': '10ltORxgpzYDZbXRNvpb',
-        'HOST': 'containers-us-west-144.railway.app',  # Or the hostname of your MySQL server
-        'PORT': '4444',           # Leave empty to use the default MySQL port (3306)
+        'PASSWORD': 'acm9t9PuOfwcriIsrmlH',
+        'HOST': 'containers-us-west-124.railway.app',  # Or the hostname of your MySQL server
+        'PORT': '7574',           # Leave empty to use the default MySQL port (3306)
     }
 }
-
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Flipkart',
+        'USER': 'root',
+        'PASSWORD': 'yasir68786878',
+        'HOST': 'localhost',  # Or the hostname of your MySQL server
+        'PORT': '3306',           # Leave empty to use the default MySQL port (3306)
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
