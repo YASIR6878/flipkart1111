@@ -84,15 +84,15 @@ DATABASES = {
     }
 }
 '''
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'acm9t9PuOfwcriIsrmlH',
-        'HOST': 'containers-us-west-124.railway.app',  # Or the hostname of your MySQL server
-        'PORT': '7574',           # Leave empty to use the default MySQL port (3306)
+        'PASSWORD': '8CXbRCU9sTk95dU3XPxf',
+        'HOST': 'containers-us-west-190.railway.app',  # Or the hostname of your MySQL server
+        'PORT': '5582',           # Leave empty to use the default MySQL port (3306)
     }
 }
 '''
@@ -106,6 +106,7 @@ DATABASES = {
         'PORT': '3306',           # Leave empty to use the default MySQL port (3306)
     }
 }
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
